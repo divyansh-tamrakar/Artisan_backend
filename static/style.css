@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic ;
+}
+nav{
+    position: relative;
+    float: right;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    padding: 2px;
+    background-color: burlywood;
+    top: 0;
+    left: 0;
+    position: sticky;
+    
+}
+
+nav li{
+    right: 80px;
+    top: 26px;
+    display: inline-block;
+}
+
+nav li a{
+    
+    text-decoration: none;
+    color: #000;
+    padding: 5px 20px;
+    border: 1px solid transparent; 
+    transition: 0.6s ease;  
+}
+nav ul li ul {
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul li ul li{
+    width: 150px;
+    float: none;
+    padding: 5px;
+    display: list-item;
+    position: relative;
+    background: #f5f5f5;
+    list-style-type: none;
+    font-size: 15px;
+}
+.second li a:hover{
+   position: relative;
+    background-color:#fff;
+    font-size: 13px;
+}
+
+nav ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+nav ul li.active a{
+   background-color: #fff;
+   color: #000;
+    
+}
+
+ header{
+     /*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../ARTISAN/background2.jpg");
+     height: 100vh;*/
+     background-size: cover;
+     background-position: center;
+     /* background-color: burlywood; */
+     height: 8vh;
+ }
+
+ 
+ .logo img{
+      
+     float: left;
+     width: 100px;
+     height: 80px;
+     /* background-color: brown; */
+ }
+ .main{
+    
+    max-width: 1200px;
+    margin:auto;
+}
+.title{
+    position: absolute;
+    top: 19%;
+    left: 45%;
+    
+}
+.title h1{
+    color: #000;
+    font-size: 40px;
+}
+/* .clickable1 img{
+    position: absolute;
+    top: 43%;
+    left: 20%;
+    
+} */
+
+.button{
+    
+    position: absolute;
+    top: 28%;
+    left: 52%;
+    
+    text-align: center;
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    color: 	#ff6347;
+    text-decoration: none;
+    transition: 0.6s ease;
+    font-size: 10px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
+}
+.search-box{
+    position: absolute;
+    left: 33%;
+    top: 20px;
+    background:black;
+    height: 30px;
+    border-radius: 0px;
+    padding: 2px;
+}
+/*.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+    
+}*/
+.search-btn{
+    color: #000;
+    float: right;
+    width: 40px;
+    height: 30px;
+    border-radius: 0px;
+    background: rgb(124, 81, 81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 12px;
+    transition: 0.4s;
+    line-height: 30px;
+    width: 390px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.clickable{
+    width: 250px;
+    text-align: center;
+    margin-top: 15%;
+    /* border: 1px solid gray; */
+    box-shadow: 20px 20px 36px 4px rgba(128,128,128,0.73);
+-webkit-box-shadow: 20px 20px 36px 4px rgba(128,128,128,0.73);
+-moz-box-shadow: 20px 20px 36px 4px rgba(128,128,128,0.73);
+    background-color: #fff;
+}
+.clickable img{
+    width: 100%;   
+}
+.clickable:hover{
+
+    
+}
+/* .clickable:hover img{
+    transform: scale(1.1);
+} */
+.text{
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    font-family: Century Gothic;
+}
+
+

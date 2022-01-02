@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    {% include 'navbar.html' %}
+</head>
+  <body>
+
+      <div class="box">
+        <div class="clickable">
+          <a href="" target="_blank"><img src="{% static 'assets/icons/images.jpg' %}"></a>
+          <div class="text">
+           <p>Bell Metal products</p>
+          </div>
+        </div>
+        <div class="clickable">
+          <a href="" target="_blank"><img src="{% static 'assets/icons/image3.jpeg' %}"></a>
+          <div class="text">
+            <p>Artisan Products</p>
+          </div>
+        </div>
+      </div>
+
+
+
+  </body>
+{% endblock content %}
