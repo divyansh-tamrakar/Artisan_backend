@@ -29,20 +29,21 @@
       <ul class="first">
         <li class="active"><a href="{% url 'home' %}">Home</a></li>
         <li><a href="#">Services</a></li>
-          <li><a href="{% url 'logout' %}" target="_blank">Logout</a>
+          <li><a href="{% url 'logout' %}" target="_blank">{{ request.user.username.capitalize }}</a>
           <ul class="second">
             <li><a href="#">Settings</a></li>
             <li><a href="#">Help</a></li>
+            <li><a href="{% url 'logout' %}"> Logout </a></li>
           </ul>
       </ul>
       {% else %}
         <ul class="first">
         <li class="active"><a href="{% url 'home' %}">Home</a></li>
         <li><a href="#">Services</a></li>
-          <li><a href="{% url 'login' %}" target="_blank">Login</a>
+          <li><a href="{% url 'login' %}">Login</a>
 
           <ul class="second">
-            <li><a href="{% url 'signup' %}" target="_blank">Sign Up</a></li>
+            <li><a href="{% url 'signup' %}" >Sign Up</a></li>
             <li><a href="#">Settings</a></li>
             <li><a href="#">Help</a></li>
           </ul>
